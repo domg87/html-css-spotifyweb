@@ -3,7 +3,10 @@
   margin: 0;
   padding: 0;
 }
-
+/* CLASS GENERALI */
+.btn {
+  color: #fff;
+}
 
 .wrapper_container {
   height: 100vh;
@@ -17,19 +20,61 @@ main {
 
 
 aside {
+  display: flex;
+  flex-direction: column;
   width: 300px;
   height: 100%;
   background-color: blue;
 }
 
+/* CLASS GENERALI */
+
+
+/* BARRA TRASPARENTE UP */
+.header_upgrade {
+  position: fixed;
+  height: 50px;
+  width: calc(100% - 300px);
+  top: 0;
+  right: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px;
+  background-color: rgba(0,0,0,0.7);
+}
+/* BARRA TRASPARENTE UP */
+
+/* ASIDE */
+
+.nom_playlist {
+  background-color: #fff;
+}
+
+.playlist_nav {
+  height: 80%;
+  overflow: auto;
+  background-color: pink;
+}
+
+.aside_bottom {
+  margin-top: auto;
+  background-color: grey;
+}
+
+
+/* SEZIONE ALBUM */
 
 .section_album {
   height: 100%;
   width: calc(100% - 300px);
   overflow-y: auto;
+  padding: 20px;
   background-color: red;
 }
 
+/* FOOTER */
 footer {
   width: 100%;
   height: 80px;
