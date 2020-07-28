@@ -11,6 +11,14 @@
   padding: 10px;
 }
 
+.mg_bot_10px {
+  margin-bottom: 10px;
+}
+
+.mg_top_10px {
+  margin-top: 10px;
+}
+
 
 
 
@@ -40,7 +48,7 @@ aside {
   width: 300px;
   height: 100%;
   background-color: #000000;
-  color: #fff;
+  color: #C1C1C1;
 }
 
 /* CLASS GENERALI */
@@ -70,19 +78,17 @@ aside {
   list-style: none;
 }
 
+.playlist_nav {
+  height: 80%;
+  overflow: auto;
+}
+
 .nom_playlist {
   background-color: #000000;
 }
 
-.playlist_nav {
-  height: 80%;
-  overflow: auto;
-  background-color: pink;
-}
-
 .aside_bottom {
   margin-top: auto;
-  background-color: grey;
 }
 
 .sec_logo {
@@ -100,9 +106,59 @@ aside {
   margin: 5px 0;
 }
 
-.home_nav span {
+.home_nav a {
   font-size: 12px;
+  text-decoration: none;
+  color: #C1C1C1;
 }
+
+.home_nav:hover li a {
+  color: #fff;
+}
+
+.playlist_nav a {
+  text-decoration: none;
+  color: #C1C1C1;
+}
+
+.fa-plus-square {
+  font-size: 40px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.nom_playlist li {
+  margin: 5px 0;
+}
+
+.playlist_title {
+  margin: 5px 0;
+}
+
+.download {
+  height: 20px;
+  vertical-align: middle;
+}
+
+.aside_bottom a {
+  text-decoration: none;
+  color: #C1C1C1;
+}
+
+.profile {
+  height: 30px;
+  background-color: #c1c1c1;
+  border: 1px solid #000;
+  border-radius: 100px;
+  vertical-align: middle;
+}
+
+.aside_bottom:hover a {
+  color: #fff;
+}
+
+
+
 
 
 /* SEZIONE ALBUM */
@@ -126,3 +182,6 @@ footer {
   margin-top: auto;
   background-color: #000;
 }
+
+
+/* RESPONSIVE */
