@@ -19,6 +19,14 @@
   margin-top: 10px;
 }
 
+.lg {
+  visibility: visible;
+}
+
+.xs {
+  visibility: hidden;
+}
+
 
 
 
@@ -95,7 +103,7 @@ aside {
   height: 50px;
 }
 
-.logo {
+.logo, .logo_small {
   height: 50px;
   padding: 10px;
 }
@@ -160,7 +168,6 @@ aside {
 
 
 
-
 /* SEZIONE ALBUM */
 
 .section_album {
@@ -177,6 +184,7 @@ p {
 
 /* FOOTER */
 footer {
+  position: fixed;
   width: 100%;
   height: 80px;
   margin-top: auto;
@@ -185,3 +193,50 @@ footer {
 
 
 /* RESPONSIVE */
+
+/* SMARTPHONE */
+@media screen and (max-width: 768px) {
+  .xs {
+    visibility: visible;
+  }
+
+.lg {
+  visibility: hidden;
+}
+
+.logo {
+  display: none;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  width: 50px;
+  height: 100%;
+}
+
+.section_album {
+  width: calc(100% - 50px);
+}
+
+.header_upgrade {
+  height: 50px;
+  width: calc(100% - 50px);
+}
+
+hr {
+  visibility: hidden;
+}
+
+.down_aside_bottom, .up_aside_bottom {
+  margin: 0;
+}
+
+}
+
+/* TABLET-DESKTOP */
+@media screen and (min-width: 769px) {
+  .home_nav img{
+    visibility: visible;
+  }
+}
