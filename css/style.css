@@ -181,34 +181,85 @@ aside {
 
 /* SEZIONE ALBUM */
 
+.nav_menu {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 60px;
+  max-width: 80%;
+  margin-left: 9%;
+  text-align: center;
+}
+
+.list_nav_menu li {
+  display: inline-block;
+  list-style: none;
+}
+
+.list_nav_menu a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+
+
 .section_album {
+  display: flex;
+  justify-content: space-between;
   height: 100%;
   width: calc(100% - 300px);
   overflow-y: auto;
-  padding: 20px;
   background-color: #141922;
 }
 
 .container_album {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
-  justify-content: space-around;
-  flex-shrink: 0;
-
+  justify-content: space-around; */
+  flex-shrink: 2;
+  margin-top: 80px;
+  margin-left: 25px;
 }
 
-.album li {
+.album {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.album li, a {
   display: inline-block;
   list-style: none;
 }
 
 .album a {
-  margin-top: 70px;
-  margin-right: 10px;
+  margin-top: 10px;
 }
 
-.album img {
-  max-width: 100px;
+.img_album {
+  width: 130px;
+  max-width: 180px;
+  margin: 10px 5px;
+}
+
+.container_album h2 {
+  margin-top: 20px;
+  color: #fff;
+}
+
+.title_playlist {
+  text-align: center;
+  font-weight: bold;
+  max-width: 140px;
+  color: #fff;
+}
+
+.subtitle {
+  font-size: 12px;
+  text-align: center;
+  max-width: 140px;
+  color: #c1c1c1;
 }
 
 
@@ -356,51 +407,72 @@ footer {
     visibility: visible;
   }
 
-.lg {
-  visibility: hidden;
-}
+  .lg {
+    visibility: hidden;
+  }
 
-.logo {
-  display: none;
-}
+  .logo {
+    display: none;
+  }
 
-main {
-  height: calc(100% - 80px);
-  display: flex;
-}
+  .wrapper_container {
+    height: 100vh;
+    background-color: green;
+  }
 
-aside {
-  display: flex;
-  flex-direction: column;
-  width: 50px;
-  height: 100%;
-}
+  main {
+    height: calc(100% - 80px);
+    display: flex;
+  }
 
-footer {
-  max-width: 100%;
-  height: 80px;
-}
+  aside {
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    height: 100%;
+  }
 
-.section_album {
-  width: calc(100% - 50px);
-}
+  footer {
+    max-width: 100%;
+    height: 80px;
+  }
 
-.header_upgrade {
-  height: 50px;
-  width: calc(100% - 50px);
-}
+  .section_album {
+    width: calc(100% - 50px);
+  }
 
-hr {
-  visibility: hidden;
-}
+  .header_upgrade {
+    height: 50px;
+    width: calc(100% - 50px);
+  }
 
-.down_aside_bottom, .up_aside_bottom {
-  margin: 0;
-}
+  hr {
+    visibility: hidden;
+  }
 
-.icon_device {
-  flex-shrink: 0;
-}
+  .down_aside_bottom, .up_aside_bottom {
+    margin: 0;
+  }
+
+  .container_album {
+    flex-wrap: nowrap;
+  }
+
+  .img_album {
+    width: 230px;
+    max-width: 230px;
+    margin: 10px 5px;
+
+  }
+
+  .nav_menu {
+    max-width: 70%;
+  }
+
+  .title_playlist, .subtitle {
+    width: 240px;
+    max-width: 100%;
+  }
 
 }
 
@@ -457,12 +529,27 @@ hr {
   .down_aside_bottom, .up_aside_bottom {
     margin: 0;
   }
-}
 
+
+}
 
 /* TABLET-DESKTOP */
 @media screen and (min-width: 769px) {
   .home_nav img{
     visibility: visible;
+}
+
+}
+
+@media screen and (min-width: 992px) {
+  .img_album {
+    width: 130px;
+    max-width: 180px;;
+    margin: 10px 5px;
+
+  }
+
+  .nav_menu {
+    margin-left: 13%;
   }
 }
