@@ -131,8 +131,23 @@ aside {
   color: #C1C1C1;
 }
 
-.home_nav:hover li a {
+.home_nav:hover a {
   color: #fff;
+}
+
+.home_nav {
+  position: relative;
+}
+
+.page_current::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -1px;
+  width: 3px;
+  height: 40%;
+  background-color: #ADFF2F;
 }
 
 .playlist_nav a {
@@ -204,7 +219,6 @@ aside {
 }
 
 
-
 .section_album {
   display: flex;
   justify-content: space-between;
@@ -215,9 +229,6 @@ aside {
 }
 
 .container_album {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: space-around; */
   flex-shrink: 2;
   margin-top: 80px;
   margin-left: 25px;
@@ -241,6 +252,29 @@ aside {
   width: 130px;
   max-width: 180px;
   margin: 10px 5px;
+}
+.layout {
+  position: relative;
+}
+.layout:hover{
+  color: #fff;
+}
+
+.layout > .fa-play-circle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  width: 100%;
+  height: 100%;
+  font-size: 40px;
+}
+
+.layout{
+  color: rgba(255, 255, 255, 0);
+  transition: 1s;
 }
 
 .container_album h2 {
