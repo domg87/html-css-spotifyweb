@@ -296,6 +296,25 @@ aside {
   color: #c1c1c1;
 }
 
+.album_created {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 350px;
+}
+
+.list_popular li {
+  display: inline-block;
+}
+
+.list_popular a {
+  list-style: none;
+}
+
+.img_popular {
+  width: 130px;
+  max-width: 180px;
+}
+
 
 
 /* FOOTER */
